@@ -16,5 +16,5 @@ public_tweets = api.search("Nintendo")
 
 for tweet in public_tweets:
     print(tweet.text)
-    # analysis = textblob(tweet.text)
-    # print(analysis.sentiment)
+    analysis = textblob(tweet.text)
+    print(analysis.sentiment)
